@@ -38,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }, this);
 
-        // Enable AppsFlyer debug logs (remove for production)
+        AppsFlyerLib.getInstance().start(getApplicationContext());
+        // Enable AppsFlyer debug logs
         AppsFlyerLib.getInstance().setDebugLog(true);
+
 
     }
 }
